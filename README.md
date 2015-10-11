@@ -33,7 +33,6 @@ What you find in this repository
 
 How to genrate cleaned data from the data collected from the accelerometers from the Samsung Galaxy S smartphone 
 ----------------------------------------------------------------------------------------------------------------
-Option -2
 * Clone this repository
 * Load the script "run_analysis.R" using source function in R
 * Run the function "TidyData()" from the console
