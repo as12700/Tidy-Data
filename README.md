@@ -38,4 +38,4 @@ Option -2
 * Load the script "run_analysis.R" using source function in R
 * Run the function "TidyData()" from the console
 
-In the repository root directory you find the file 'sensordata_avg_by_subject.txt' 
+In the current working directory you find the file 'sensordata_avg_by_subject.txt' 
