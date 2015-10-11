@@ -18,10 +18,10 @@ TidyData <- function()
     pathfile<-file.path(getwd(),   "data/UCI HAR Dataset" ) 
     if(!file.exists("./data")){dir.create("./data")}
     if(!file.exists("./data/Dataset.zip"))
-      {
+    {
       fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
       download.file(fileUrl,destfile="./data/Dataset.zip")
-      }
+    }
     
     ### Unzip DataSet to /data directory
     unzip(zipfile="./data/Dataset.zip",exdir="./data")
@@ -161,7 +161,7 @@ TidyData <- function()
     
   }
   
-  directoryPath <- setDirectory()
+  directoryPath <- setDirectoryPaths()
   XTestData <- loadXTestData (directoryPath)
   YTestData <- loadYTestData (directoryPath)
   SubjectTestData  <- loadSubjectTestData (directoryPath)  
