@@ -31,12 +31,11 @@ What you find in this repository
 * README.md: this file
 * run_analysis.R: R script to transform raw data set in a tidy one
 
-How to
-------
-* clone this repository
-* download compressed raw data
-* unzip raw data and copy the directory 'UCI HAR Dataset' to the cloned repository root directory
-* open a R console and set the working directory to the repository root
-* run run_analysis.R script 
+How to genrate cleaned data from the data collected from the accelerometers from the Samsung Galaxy S smartphone 
+----------------------------------------------------------------------------------------------------------------
+Option -2
+* Clone this repository
+* Load the script "run_analysis.R" using source function in R
+* Run the function "TidyData()" from the console
 
 In the repository root directory you find the file 'sensordata_avg_by_subject.txt' 
