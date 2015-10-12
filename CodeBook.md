@@ -38,7 +38,7 @@ Test and training data, subject ids and activity ids are merged to obtain a sing
 Variables are labelled with the names assigned by original collectors.
 
 __Extract mean and standard deviation variables__
-Keep only the values of estimated mean and standard deviation .
+Data is cleaned to Keep only the values of estimated mean and standard deviation .
 
 __Get descriptive activity names__
 A new column is added to intermediate data set with the activity description.
@@ -56,14 +56,19 @@ Tidy data set
 ### Variables
 
 The tidy data set contains :
+* Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+* Triaxial Angular velocity from the gyroscope. 
+* A 561-feature vector with time and frequency domain variables. 
+* An identifier of the subject who carried out the experiment (__Subject__). Its range is from 1 to 30. 
+* An activity label (__Activity__): WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+* Mean of all other variables are measurement collected from the accelerometer and gyroscope 3-axial raw signal (numeric value)
 
-* an identifier of the subject who carried out the experiment (__Subject__). Its range is from 1 to 30. 
-* an activity label (__Activity__): WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-* mean of all other variables are measurement collected from the accelerometer and gyroscope 3-axial raw signal (numeric value)
 
 The variable name convention is like the following: 
 
 * __measurement__: the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk).  Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable: gravityMean, tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean,tBodyGyroJerkMean.
+
+
 
 * __.mean/std__: mean or standard deviation of the measurement
 * __.X/Y/Z__: one direction of a 3-axial signal
